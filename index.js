@@ -56,17 +56,19 @@ let notes = [
     })
 
     app.post('/api/notes', (request, response) => {
-       const content = request.body
+       const body = request.body
+       console.log(body)
        if (!body.content) { 
          return response
          .status(400)
          .json({error:"content is missing"})}
        
       const note = {
-             ...body.content, 
+              content:body.content, 
              id:genId(),
-             important: content.important || false}
+             important: body.important || false}
        notes.push(note)
+       console.log(note)
        response.json(note)
     })
 
