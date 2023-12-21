@@ -1,0 +1,19 @@
+delete Http://localhost:3001/api/notes/2
+
+####
+
+get Http://localhost:3001/api/notes
+
+####
+
+post http://localHost:3001/api/notes
+content-Type:application/json
+
+{ 
+    "content":"Andre esta aprendendo",
+    "important":false
+}
+
+####
+
+get http://localhost:3001/campos
