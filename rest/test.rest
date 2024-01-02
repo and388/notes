@@ -1,4 +1,4 @@
-delete Http://localhost:3001/api/notes/2
+delete Http://localhost:3001/api/notes/658c639136bb6b216f39d096
 
 ####
 
@@ -16,4 +16,14 @@ content-Type:application/json
 
 ####
 
-get http://localhost:3001/campos
+get http://localhost:3001/api/notes/658c639136bb6b216f39d096
+
+#####
+
+put http://localhost:3001/api/notes/658b18f101bf2eba87c22a57
+content-type:application/json
+
+{
+    "content":"is not dificult , it is so easy",
+    "important":true
+}
